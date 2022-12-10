@@ -1,0 +1,31 @@
+PRINT "Math is annoying!"
+INPUT nums
+
+LET a = 9
+LET b = 3
+LET c = (100 / (2 * 5) + 4.19)
+LET z = (4^6 + 9)
+
+# Checking if 2 or more character operators are read properly
+IF 9 !== 8 THEN
+    PRINT "Kiwi"
+ENDIF
+
+IF 2 <== 2 THEN 
+    PRINT "Cherry"
+ENDIF
+
+IF a >== b THEN 
+    PRINT "Apple" 
+ENDIF
+
+# while loop
+WHILE nums > 0 REPEAT
+    PRINT a
+    LET d = a + b
+    LET a = b
+    LET b = d
+    LET nums = b
+    LET nums = nums - 1
+    PRINT nums
+ENDWHILE
